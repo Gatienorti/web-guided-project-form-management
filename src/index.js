@@ -14,13 +14,14 @@ const initialFormValues = { petName: "", petType: "" };
 
 function SimpleForm() {
   const [pets, setPets] = useState(petsList);
-  const [formValues, setFormValues] = useState(initialFormValues)
-  
+  const [formValues, setFormValues] = useState(initialFormValues);
+
   return (
-    <div>
-      <h1></h1>
+    <div className="container">
+      <h1>Simple Form</h1>
+      {}
     </div>
-  )
+  );
 }
 
 render(

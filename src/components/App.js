@@ -46,7 +46,7 @@ export default function App() {
       .post("fakeapi.com", newFriend)
       .then((res) => {
         setFriends([newFriend, ...friends]);
-        setFormValues(initialFormValues);
+        setFormValue(initialFormValues);
       })
       .catch((err) => {
         console.log(err, "something broke");

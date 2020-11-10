@@ -25,6 +25,7 @@ function SimpleForm() {
   };
 
   const submit = (evt) => {
+    evt.preventDefault();
     const newPet = {
       petName: formValues.petName.trim(),
       petType: formValues.petType.trim(),

@@ -18,8 +18,10 @@ function SimpleForm() {
 
   const change = (evt) => {
     const { name, value } = evt.target;
-    setFormValues({ ...formValues, [name] });
+    setFormValues({ ...formValues, [name]: value });
+    // we don't know ahead of time if the name will be petName or petValue
   };
+
   const submit = (evt) => {};
 
   return (

@@ -17,7 +17,7 @@ export default function App() {
 
   // 🔥 STEP 1 - WE NEED STATE TO HOLD ALL VALUES OF THE FORM!
   // fix this using the state hook
-  const [formValue, setFormValue] = useState(initialFormValues);
+  const [formValues, setFormValue] = useState(initialFormValues);
 
   const updateForm = (inputName, inputValue) => {
     // 🔥 STEP 8 - IMPLEMENT a "form state updater" which will be used inside the inputs' `onChange` handler
@@ -44,7 +44,9 @@ export default function App() {
         // 🔥 STEP 2 - The form component needs its props.
         //  Check implementation of FriendForm
         //  to see what props it expects.
-        values={{}}
+        values={formValues}
+        update={update}
+        submit={submit}
       />
 
       {friends.map((friend) => {

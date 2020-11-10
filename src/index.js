@@ -16,7 +16,9 @@ function SimpleForm() {
   const [pets, setPets] = useState(petsList);
   const [formValues, setFormValues] = useState(initialFormValues);
 
-  const change = (evt) => {};
+  const change = (evt) => {
+    debugger;
+  };
   const submit = (evt) => {};
 
   return (

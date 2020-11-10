@@ -42,8 +42,8 @@ function SimpleForm() {
           value={formValues.petType}
           onChange={change}
         ></input>
+        <button>Submit</button>
       </form>
-      <button>Submit</button>
     </div>
   );
 }

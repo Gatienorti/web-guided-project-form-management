@@ -18,7 +18,7 @@ function SimpleForm() {
 
   const change = (evt) => {
     const { name, value } = evt.target;
-    setFormValues()
+    setFormValues({ ...formValues, [name] });
   };
   const submit = (evt) => {};
 

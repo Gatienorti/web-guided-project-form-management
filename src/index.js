@@ -18,6 +18,7 @@ function SimpleForm() {
 
   const change = (evt) => {
     const { name, value } = evt.target;
+    setFormValues()
   };
   const submit = (evt) => {};
 

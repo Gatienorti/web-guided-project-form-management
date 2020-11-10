@@ -17,6 +17,7 @@ function SimpleForm() {
   const [formValues, setFormValues] = useState(initialFormValues);
 
   const change = (evt) => {};
+  const submit = (evt) => {};
 
   return (
     <div className="container">
@@ -28,7 +29,7 @@ function SimpleForm() {
           </div>
         );
       })}
-      <form>
+      <form onSubmit={submit}>
         <input
           name="petName"
           type="text"

@@ -26,8 +26,9 @@ function SimpleForm() {
 
   const submit = (evt) => {
     const newPet = {
-      petName: formValues
-    }
+      petName: formValues.petName.trim(),
+      petType: formValues.petType.trim(),
+    };
   };
 
   return (

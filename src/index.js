@@ -19,7 +19,11 @@ function SimpleForm() {
   return (
     <div className="container">
       <h1>Simple Form</h1>
-      {}
+      {pets.map((pet, idx) => {
+        return (
+          <div key={idx}></div>
+        )
+      })}
     </div>
   );
 }

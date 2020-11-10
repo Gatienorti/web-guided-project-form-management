@@ -45,10 +45,11 @@ export default function App() {
     axios
       .post("fakeapi.com", newFriend)
       .then((res) => {
-        debugger;
+        setFriends([...friends, newFriend]);
+        setFormValues(initialFormValues);
       })
       .catch((err) => {
-        debugger;
+        console.log(err, "something broke");
       });
 
     //  d) also on success clear the form

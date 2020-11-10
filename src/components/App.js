@@ -41,6 +41,10 @@ export default function App() {
     if (!newFriend.username || !newFriend.email || !newFriend.role) return;
 
     //  c) POST new friend to backend, and on success update the list of friends in state with the new friend from API
+
+    
+
+
     //  d) also on success clear the form
   };
 

@@ -20,7 +20,8 @@ function SimpleForm() {
     const { name, value } = evt.target;
     setFormValues({ ...formValues, [name]: value });
     // we don't know ahead of time if the name will be petName or petValue
-    // [name] is not an array literal
+    // [name] is not an array literal:
+    // it will override whatever the value of name was in formValues
   };
 
   const submit = (evt) => {};

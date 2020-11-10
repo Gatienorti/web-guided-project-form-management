@@ -38,7 +38,7 @@ export default function App() {
     };
     //  b) prevent further action if either username or email or role is empty string after trimming
 
-    if (!newFriend.username || !newFriend.)
+    if (!newFriend.username || !newFriend.email || !newFriend.role) return;
 
     //  c) POST new friend to backend, and on success update the list of friends in state with the new friend from API
     //  d) also on success clear the form
